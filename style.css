@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.WrapperDiv{
+    position: relative;
+    overflow: hidden;
+}
+.page1 .navigation{
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6vw 7vw;
+}
+.navigation h4{
+    height: auto;
+    font-size: 1vw;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+.navigation h4:hover{
+    color: #FF003A;
+}
+.navigation h4::before{
+    content: "";
+    height: 4%;
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    border-radius: 50vw;
+    background-color: #FF003A;
+    transition: all 0.2s linear;
+}
+.navigation h4:hover::before{
+    width: 100%;
+    background-color: #FF003A;
+}
+.navigation .leftDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+.navigation>#logo{
+    width: 12vw;
+    cursor: pointer;
+}
+.navigation .rightDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+.rightDetails .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.buttons h5{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.buttons .roundButton{
+    border: 1px solid #FF003A;
+    border-radius: 50vw;
+    padding: 0.4vw 0.6vw;
+    transition: all 0.2s linear;
+}
+.roundButton:hover{
+    background-color: #FF003A;
+    color: white;
+    cursor: pointer;
+}
+.buttons .ovelButton{
+    background-color: #FF003A;
+    border-radius: 50vw;
+    padding: 0.6vw 3.5vw;
+    color: white;
+}
+.ovelButton:hover{
+    cursor: pointer;
+}
+.WrapperDiv .page1{
+    height: 100vh;
+    width: 100vw;
+}
+.page1 .centerDiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 6.8vw;
+}
+.centerDiv .leftSideDetails{
+    height: 37.5vw;
+    width: 48vw;
+    position: relative;
+    z-index: 3;
+    background-image: url("images/Pumpkin_Gnocchi.jpg");
+    background-position: left;
+    background-size: 120vw 100%;
+}
+.leftSideDetails .topDetails{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 12vw;
+    padding-bottom: 0.5vw;
+}
+.topDetails h1{
+    font-size: 2.8vw;
+    margin-bottom: 0.8vw;
+}
+.topDetails span{
+    color: #FF003A;
+}
+.topDetails p{
+    font-size: 1.2vw;
+    width: 32.5vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.2px;
+}
+.centerDiv .bottomDetails{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottomDetails .cards{
+    position: relative;
+    margin-top: 1.7vw;
+    margin-right: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.bottomDetails .card{
+    height: 12.2vw;
+    width: 18vw;
+    border-top-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.5vw;
+}
+.card .detailBar{
+    height: 2.5vw;
+    width: 78%;
+    background-color: rgb(255, 255, 255);
+    padding: 1vw 1.5vw;
+    border-radius: 0.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards>#card1{
+    background-image: url("images/e5c215d9f0d6c4e4d1b3891ad0a98d5c.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.cards>#card2{
+    background-image: url("images/71d85bd8ba1403c05a4432516d1b4a35.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.cards>#card3{
+    background-image: url("images/d1ee7e8d7d44a4924bbee57cc4692a6a.jpg");
+    background-position: top;
+    background-size: cover;
+    border-top-right-radius: 2.5vw;
+}
+.detailBar h4{
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+.detailBar i{
+    color: #FF003A;
+}
+.bottomDetails .buttonDiv{
+    height: 22.5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.9vw;
+    padding-right: 2.7vw;
+}
+.buttonDiv .arrow{
+    padding: 0.6vw 0.7vw;
+    border-radius: 50vw;
+}
+.arrow i{
+    color: white;
+}
+.buttonDiv>#leftArrow{
+    background-color: #808082;
+}
+.buttonDiv>#rightArrow{
+    background-color: black;
+}
+.centerDiv .backgroundIMGContainer{
+    height: 37.5vw;
+    width: 45vw;
+    border-bottom-right-radius: 10vw;
+    background-color: antiquewhite;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/Pumpkin_Gnocchi.jpg");
+    background-position: 95% 50%;
+    background-size: 185% 110%;
+}
+.WrapperDiv .page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3F4F6;
+    position: relative;
+}
+.page2 .upperContainer{
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upperContainer .firstDiv{
+    height: 90vh;
+    width: 9vw;
+    position: relative;
+}
+.firstDiv h1{
+    position: relative;
+    z-index: 1;
+    top: 31vw;
+    left: 5vw;
+    font-weight: 900;
+    font-size: 18vw;
+    rotate: -90deg;
+    color: #F3F4F6;
+}
+.upperContainer .secondDiv{
+    height: 90vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondDiv .leftCrads{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+}
+.leftCrads .firstCard{
+    height: 15.5vw;
+    width: 13.5vw;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    top: 5vw;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -0.4vw 0.5vw 1vw rgba(0, 0, 0, 0.32);
+}
+.firstCard>#deliveryMan{
+    width: 5.5vw;
+    margin-bottom: 0.8vw;
+}
+.firstCard h4{
+    font-size: 1.2vw;
+    margin-bottom: 0.4vw;
+}
+.firstCard p{
+    font-size: 0.9vw;
+    width: 11vw;
+    line-height: 1.1vw;
+}
+.secondDiv .rightCards{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vw;
+}
+.rightCards .firstCard{
+    height: 15.5vw;
+    width: 13.5vw;
+    background-color: #FF003A;
+    box-shadow: -0.4vw 0.5vw 1vw rgba(0, 0, 0, 0.32);
+    position: relative;
+    top: 6.5vw;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rightCards>#firstCard{
+    color: white;
+}
+.rightCards>#secondCard{
+    background-color: white;
+}
+.upperContainer .thirdDiv{
+    height: 90vh;
+    width: 40vw;
+    padding-left: 1.2vw;
+    position: relative;
+    top: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+}
+.thirdDiv span{
+    color: #FF003A;
+}
+.thirdDiv p{
+    width: 32vw;
+    line-height: 1.6vw;
+}
+.thirdDiv .button{
+    background-color: #FF003A;
+    color: white;
+    border-radius: 50vw;
+    padding: 0.9vw 3vw;
+}
+.button h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.page2 .halfRoundFromBottom {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.WrapperDiv .page3{
+    height: 145vh;
+    width: 100vw;
+    padding-top: 2vw;
+    background-color: #F3F4F6;
+}
+.page3 .upperSection{
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.8vw;
+}
+.upperSection .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+}
+.upperSection .centerIMG{
+    height: 15vw;
+    width: 70vw;
+    background-color: white;
+    background-image: url("images/vegetables-top-view-white-background_1040174-1574.avif");
+    background-position: center;
+    background-size: cover;
+    box-shadow: -0.4vw 0.5vw 1vw rgba(0, 0, 0, 0.32);
+    border-radius: 2.5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+.centerIMG .first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.first h1{
+    font-size: 4.8vw;
+    color: black;
+}
+.first p{
+    font-size: 1.1vw;
+    color: black;
+}
+.centerIMG>#middleHeading{
+    border-left: 1px solid rgba(0, 0, 0, 0.273);
+    border-right: 1px solid rgba(0, 0, 0, 0.273);
+    padding: 0vw 5vw;
+}
+.centerIMG>#coloredHeading h1{
+    color: #FF003A;
+}
+.centerIMG>#coloredHeading p{
+    color: #FF003A;
+}
+.upperSection .centerSelector{
+    height: 7.5vh;
+    width: 52vw;
+    background-color: white;
+    border-radius: 50vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 0.2vw;
+    padding-right: 3vw;
+}
+.centerSelector h4{
+    font-size: 1vw;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.centerSelector .button{
+    border: 1px solid #FF003A;
+    background-color: #FF003A;
+    color: white;
+    font-weight: 600;
+    padding: 0.9vw 2vw;
+    border-radius: 50vw;
+}
+.centerSelector .rightDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+.page3 .cardsSection{
+    width: 100vw;
+    position: relative;
+    top: 3.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+.cardsSection .rescipeCard{
+    height: 66vh;
+    width: 21.5vw;
+    background-color: white;
+    box-shadow: -0.4vw 0.5vw 1vw rgba(0, 0, 0, 0.32);
+    border-radius: 1.5vw;
+    position: relative;
+}
+.rescipeCard .IMGSection{
+    height: 50%;
+    width: 100%;
+    background-image: url("images/71d85bd8ba1403c05a4432516d1b4a35.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+}
+.IMGSection .rescipeName{
+    height: 35%;
+    width: 90%;
+    background-color: white;
+    box-shadow: -0.2vw 0.1vw 1vw rgba(0, 0, 0, 0.32);
+    position: relative;
+    top: 2.6vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+}
+.rescipeName h4{
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+.rescipeCard .bottomDetails{
+    height: 50%;
+    width: 100%;
+    padding-top: 2.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5vw;
+}
+.text h5{
+    font-size: 0.9vw;
+    padding-bottom: 0.2vw;
+}
+.bottomDetails p{
+    font-size: 0.6vw;
+    font-weight: 500;
+    width: 17vw;
+}
+.rescipeCard>#secondDishCard{
+    background-image: url("images/download.jfif");
+    background-position: top;
+    background-size: cover;
+}
+.rescipeCard>#thirdDishCard{
+    background-image: url("images/IMG_9464-819x1024.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.rescipeCard>#forthDishCard{
+    background-image: url("images/e5c215d9f0d6c4e4d1b3891ad0a98d5c.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.WrapperDiv .page4{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #F3F4F6;
+    padding-top: 2vw;
+}
+.page4 .upperCurve{
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.page4 .bottomDetails{
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+}
+.bottomDetails .textContainer{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+}
+.textContainer h1{
+    font-size: 2.5vw;
+}
+.textContainer p{
+    color: rgba(0, 0, 0, 0.783);
+    font-size: 1.2vw;
+    font-weight: 400;
+    width: 60vw;
+}
+.bottomDetails .bottomCurve{
+    height: 26vh;
+    width: 100vw;
+    background-color: #F3F4F6;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1vw;
+}
+.bottomCurve img{
+    width: 12vw;
+    cursor: pointer;
+    position: relative;
+    top: -1vw;
+}
+.bottomCurve .bottomHeadings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.bottomHeadings h4{
+    height: auto;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+.bottomHeadings h4:hover{
+    color: #FF003A;
+}
+.bottomHeadings h4::before{
+    content: "";
+    height: 4%;
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    border-radius: 50vw;
+    background-color: #FF003A;
+    transition: all 0.2s linear;
+}
+.bottomHeadings h4:hover::before{
+    width: 100%;
+    background-color: #FF003A;
+}
+.bottomCurve .socialMediaLinks{
+    position: relative;
+    padding-top: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+.socialMediaLinks i{
+    font-size: 1.5vw;
+}
+.socialMediaLinks i:hover{
+    color: #FF003A;
+    cursor: pointer;
+}
